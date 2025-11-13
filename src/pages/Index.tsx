@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle, Award, Users, Shield, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle, Award, Users, Shield, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import EstimateForm from "@/components/EstimateForm";
 import heroImage from "@/assets/hero-bathroom.jpg";
 import before1 from "@/assets/before-1.jpg";
 import after1 from "@/assets/after-1.jpg";
@@ -148,17 +149,36 @@ const Index = () => {
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Bathroom?
+            Ready To Get Started?
           </h2>
-          <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Get your free, no-obligation estimate today. We'll discuss your vision, assess your space, and provide a detailed project plan.
+          <p className="text-xl text-primary-foreground/90 mb-8">
+            Schedule your free estimate today
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              Get Your Free Estimate
-              <ArrowRight className="ml-2 w-5 h-5" />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button 
+              size="lg" 
+              className="bg-accent text-accent-foreground hover:bg-accent/90"
+              onClick={() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Request Estimate
             </Button>
-          </Link>
+            <a 
+              href="tel:+17035551234" 
+              className="flex items-center gap-2 text-lg font-semibold text-primary-foreground hover:text-primary-foreground/80 transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+              (703) 555-1234
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Estimate Form Section */}
+      <section id="estimate-form" className="py-16 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <EstimateForm />
+          </div>
         </div>
       </section>
 
