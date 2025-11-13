@@ -7,6 +7,12 @@ import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import before3 from "@/assets/before-3.jpg";
 import after3 from "@/assets/after-3.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const Gallery = () => {
   const projects = [
@@ -31,6 +37,15 @@ const Gallery = () => {
       location: "McLean, VA",
       description: "Spacious design with navy accent wall, double vanity, and premium finishes."
     },
+  ];
+
+  const galleryImages = [
+    { src: gallery1, alt: "Modern bathroom with white subway tiles and glass shower" },
+    { src: gallery2, alt: "Luxury spa bathroom with marble and gold fixtures" },
+    { src: gallery3, alt: "Contemporary bathroom with navy blue accent tiles" },
+    { src: gallery4, alt: "Elegant master bathroom with walk-in shower" },
+    { src: gallery5, alt: "Modern bathroom with floating vanity and vessel sink" },
+    { src: gallery6, alt: "Classic white bathroom with carrara marble" },
   ];
 
   return (
@@ -82,6 +97,34 @@ const Gallery = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Additional Gallery Section */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                More Completed Projects
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Explore additional bathroom renovations showcasing our expertise in design and craftsmanship
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {galleryImages.map((image, index) => (
+                <Card key={index} className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow group">
+                  <CardContent className="p-0">
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={image.src} 
+                        alt={image.alt}
+                        className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </main>
