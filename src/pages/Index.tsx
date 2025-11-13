@@ -163,11 +163,11 @@ const Index = () => {
               Request Estimate
             </Button>
             <a 
-              href="tel:+17035551234" 
+              href="tel:+17039467608" 
               className="flex items-center gap-2 text-lg font-semibold text-primary-foreground hover:text-primary-foreground/80 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              (703) 555-1234
+              (703) 946-7608
             </a>
           </div>
         </div>
