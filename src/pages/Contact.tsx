@@ -47,7 +47,7 @@ const Contact = () => {
               Get Your Free Estimate
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ready to transform your bathroom? Fill out the form below and we'll contact you within 24 hours to discuss your project and provide a detailed estimate.
+              Tell us about your project and we'll get back to you within 24 hours
             </p>
           </div>
 
