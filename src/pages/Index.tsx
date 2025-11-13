@@ -13,7 +13,7 @@ import after2 from "@/assets/after-2.jpg";
 const Index = () => {
   const features = [
     { icon: Shield, text: "Licensed & Insured" },
-    { icon: Users, text: "Family-Owned" },
+    { icon: Users, text: "Locally Owned" },
     { icon: Award, text: "20+ Years Experience" },
     { icon: CheckCircle, text: "Satisfaction Guaranteed" },
   ];
