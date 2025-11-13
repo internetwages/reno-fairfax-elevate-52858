@@ -177,6 +177,14 @@ const Index = () => {
       <section id="estimate-form" className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+                Get Your Free Estimate
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Tell us about your project and we'll get back to you within 24 hours
+              </p>
+            </div>
             <EstimateForm />
           </div>
         </div>
