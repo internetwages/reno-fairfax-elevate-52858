@@ -49,8 +49,8 @@ const Navigation = () => {
           {/* Phone CTA - Desktop */}
           <div className="hidden md:flex items-center space-x-2">
             <Phone className="w-4 h-4 text-accent" />
-            <a href="tel:+17035551234" className="text-foreground font-medium hover:text-accent transition-colors">
-              (703) 555-1234
+            <a href="tel:+17039467608" className="text-foreground font-medium hover:text-accent transition-colors">
+              (703) 946-7608
             </a>
           </div>
 
@@ -82,11 +82,11 @@ const Navigation = () => {
               </Link>
             ))}
             <a
-              href="tel:+17035551234"
+              href="tel:+17039467608"
               className="flex items-center space-x-2 px-4 py-3 mt-2 text-accent font-medium"
             >
               <Phone className="w-4 h-4" />
-              <span>(703) 555-1234</span>
+              <span>(703) 946-7608</span>
             </a>
           </div>
         )}
