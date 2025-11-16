@@ -17,7 +17,7 @@ const Testimonials = () => {
       location: "Fairfax Station, VA",
       rating: 5,
       text: "Hamilton Bath did a wonderful job on my master bathroom remodel. Hamid took the time to work with me on my design and budget. I'm extremely pleased with the final results and would definitely recommend.",
-      project: "Full Bathroom Renovation"
+      project: "Master Bathroom Remodel"
     },
     {
       name: "Jennifer K.",
