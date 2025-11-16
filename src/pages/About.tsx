@@ -29,11 +29,11 @@ const About = () => {
 
   const services = [
     "Complete bathroom remodels",
-    "Custom steam room installation",
     "Custom tile and shower installations",
     "Vanity and countertop replacement",
     "Flooring installation",
     "Fixture upgrades and replacements",
+    "Custom steam room installation",
     "Custom finishes and details",
     "Lighting and ventilation improvements"
   ];
