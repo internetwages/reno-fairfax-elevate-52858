@@ -14,7 +14,7 @@ const Testimonials = () => {
     },
     {
       name: "Lee Ann W.",
-      location: "Fairfax Station, VA",
+      location: "Leesburg, VA",
       rating: 5,
       text: "Hamilton Bath did a wonderful job on my master bathroom remodel. Hamid took the time to work with me on my design and budget. I'm extremely pleased with the final results and would definitely recommend.",
       project: "Master Bathroom Remodel"
