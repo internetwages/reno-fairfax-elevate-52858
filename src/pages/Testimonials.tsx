@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: "Sarah L.",
       location: "Vienna, VA",
       rating: 5,
-      text: "Hamilton Bath transformed our outdated bathroom into something amazing. The attention to detail was incredible, and they finished on time and within budget. We couldn't be happier with the results!",
+      text: "Hamid and the team at Hamilton Bath helped me with a project to re-tile my shower. In short they are incredibly professional, high quality, time efficient, and are quick to respond with any questions or information. Would definitely recommend",
       project: "Master Bathroom Remodel"
     },
     {
