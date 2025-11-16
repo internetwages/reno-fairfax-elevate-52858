@@ -31,7 +31,7 @@ const About = () => {
     "Complete bathroom remodels",
     "Custom tile and shower installations",
     "Vanity and countertop replacement",
-    "Flooring installation and repair",
+    "Flooring installation",
     "Fixture upgrades and replacements",
     "Accessibility modifications",
     "Custom finishes and details",
