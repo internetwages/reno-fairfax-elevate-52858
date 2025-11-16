@@ -7,7 +7,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Kevin D.",
-      location: "Vienna, VA",
+      location: "Bethesda, MD",
       rating: 5,
       text: "Hamid and the team at Hamilton Bath helped me with a project to re-tile my shower. In short they are incredibly professional, high quality, time efficient, and are quick to respond with any questions or information. Would definitely recommend",
       project: "Master Bathroom Remodel"
