@@ -20,7 +20,7 @@ const Testimonials = () => {
       project: "Master Bathroom Remodel"
     },
     {
-      name: "Jennifer K.",
+      name: "Deena P.",
       location: "McLean, VA",
       rating: 5,
       text: "We had a tight timeline and a specific vision. Hamilton Bath delivered beyond our expectations. The craftsmanship is outstanding, and they kept the work area clean throughout the project.",
