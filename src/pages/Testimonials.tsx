@@ -16,7 +16,7 @@ const Testimonials = () => {
       name: "Michael R.",
       location: "Fairfax Station, VA",
       rating: 5,
-      text: "From start to finish, the team was professional, courteous, and skilled. They helped us design a beautiful bathroom that perfectly fits our style and needs. Highly recommend!",
+      text: "Hamilton Bath did a wonderful job on my master bathroom remodel. Hamid took the time to work with me on my design and budget. I'm extremely pleased with the final results and would definitely recommend.",
       project: "Full Bathroom Renovation"
     },
     {
