@@ -21,7 +21,7 @@ const Testimonials = () => {
     },
     {
       name: "Deena P.",
-      location: "McLean, VA",
+      location: "Falls Church, VA",
       rating: 5,
       text: "We had a tight timeline and a specific vision. Hamilton Bath delivered beyond our expectations. The craftsmanship is outstanding, and they kept the work area clean throughout the project.",
       project: "Guest Bathroom Update"
