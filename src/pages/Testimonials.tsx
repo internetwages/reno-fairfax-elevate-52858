@@ -39,6 +39,83 @@ const Testimonials = () => {
       rating: 5,
       text: "The quality of work speaks for itself. Hamilton Bath turned our cramped, outdated bathroom into a spa-like retreat. They were patient with all our questions and made great design suggestions.",
       project: "Contemporary Bath Transformation"
+    },
+    {
+      name: "Robert S.",
+      location: "Arlington, VA",
+      rating: 5,
+      text: "Professional service from start to finish. Hamilton Bath transformed our outdated bathroom into a modern masterpiece. Their attention to detail is exceptional.",
+      project: "Full Bathroom Renovation"
+    },
+    {
+      name: "Sarah M.",
+      location: "Alexandria, VA",
+      rating: 5,
+      text: "Excellent workmanship and great communication throughout the project. Our new bathroom exceeded all expectations. Highly recommend Hamilton Bath!",
+      project: "Luxury Master Bath"
+    },
+    {
+      name: "James & Carol B.",
+      location: "Fairfax, VA",
+      rating: 5,
+      text: "We couldn't be happier with our bathroom remodel. The team was professional, punctual, and the results are stunning. Worth every penny!",
+      project: "Elegant Bathroom Redesign"
+    },
+    {
+      name: "Michelle L.",
+      location: "Vienna, VA",
+      rating: 5,
+      text: "Hamilton Bath made our dream bathroom a reality. From design to completion, everything was handled with care and expertise. Absolutely love it!",
+      project: "Spa-Inspired Retreat"
+    },
+    {
+      name: "Thomas H.",
+      location: "Falls Church, VA",
+      rating: 5,
+      text: "Outstanding quality and service. The team was respectful of our home and completed the project on schedule. Our bathroom looks incredible!",
+      project: "Modern Bathroom Update"
+    },
+    {
+      name: "Patricia G.",
+      location: "Ashburn, VA",
+      rating: 5,
+      text: "From consultation to final walkthrough, Hamilton Bath was fantastic. They listened to our needs and delivered exactly what we wanted.",
+      project: "Classic Bathroom Remodel"
+    },
+    {
+      name: "William F.",
+      location: "Herndon, VA",
+      rating: 5,
+      text: "The craftsmanship is top-notch. Hamilton Bath transformed our dated bathroom into a beautiful, functional space. Could not be more pleased!",
+      project: "Contemporary Renovation"
+    },
+    {
+      name: "Elizabeth R.",
+      location: "Sterling, VA",
+      rating: 5,
+      text: "Professional, reliable, and skilled. Hamilton Bath delivered exceptional results. Our new bathroom is everything we hoped for and more.",
+      project: "Upscale Bath Transformation"
+    },
+    {
+      name: "Daniel & Karen J.",
+      location: "Centreville, VA",
+      rating: 5,
+      text: "We interviewed several contractors and Hamilton Bath stood out. Their work quality and customer service are unmatched. Highly recommend!",
+      project: "Full Master Suite Remodel"
+    },
+    {
+      name: "Susan C.",
+      location: "Manassas, VA",
+      rating: 5,
+      text: "Hamilton Bath exceeded our expectations in every way. Beautiful work, fair pricing, and wonderful to work with throughout the entire process.",
+      project: "Transitional Bathroom Design"
+    },
+    {
+      name: "Christopher M.",
+      location: "Tysons, VA",
+      rating: 5,
+      text: "Impressive attention to detail and professionalism. Hamilton Bath turned our vision into reality with stunning results. Couldn't ask for better!",
+      project: "Luxury Bathroom Upgrade"
     }
   ];
 
