@@ -33,7 +33,7 @@ const About = () => {
     "Vanity and countertop replacement",
     "Flooring installation",
     "Fixture upgrades and replacements",
-    "Accessibility modifications",
+    "Custom steam room installation",
     "Custom finishes and details",
     "Lighting and ventilation improvements"
   ];
