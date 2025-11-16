@@ -12,7 +12,6 @@ const Navigation = () => {
     { name: "Our Work", path: "/gallery" },
     { name: "Testimonials", path: "/testimonials" },
     { name: "About Us", path: "/about" },
-    { name: "Free Estimate", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -47,11 +46,16 @@ const Navigation = () => {
           </div>
 
           {/* Phone CTA - Desktop */}
-          <div className="hidden md:flex items-center space-x-2">
-            <Phone className="w-4 h-4 text-accent" />
-            <a href="tel:+17039467608" className="text-foreground font-medium hover:text-accent transition-colors">
-              (703) 946-7608
-            </a>
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <Phone className="w-4 h-4 text-accent" />
+              <a href="tel:+17039467608" className="text-foreground font-medium hover:text-accent transition-colors">
+                (703) 946-7608
+              </a>
+            </div>
+            <Button asChild>
+              <Link to="/contact">Get Free Estimate</Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,6 +92,11 @@ const Navigation = () => {
               <Phone className="w-4 h-4" />
               <span>(703) 946-7608</span>
             </a>
+            <div className="px-4 py-3">
+              <Button asChild className="w-full">
+                <Link to="/contact" onClick={() => setIsOpen(false)}>Get Free Estimate</Link>
+              </Button>
+            </div>
           </div>
         )}
       </div>
