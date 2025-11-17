@@ -169,7 +169,7 @@ const Index = () => {
           <div className="text-center">
             <Link to="/gallery">
               <Button variant="outline" size="lg">
-                View All Projects
+                View More Projects
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
