@@ -87,7 +87,7 @@ const Testimonials = () => {
       name: "Elener & Joe W.",
       location: "Chantilly, VA",
       rating: 5,
-      text: "Hamilton Bath recently completed the remodel of our master bath and hall bath. We worked closely with Hamid on the design, his input was very valuable to us. Both Hamid and his crew were very professional, knowledgeable, respectful, neat, pleasant, arrived on time and did what they said they would do. Hamid was very good at communicating what was going to be done each day and was always very good about getting back to us with questions we had. I made some minor changes along the way and Hamid made them happen. I would recommend Hamilton Bath to anyone that needs a bathroom remodeling. We are extremely happy customers.",
+      text: "Hamilton Bath recently completed the remodel of our master bath and hall bath. We worked closely with Hamid on the design, his input was very valuable to us. Both Hamid and his crew were very professional, knowledgeable, respectful, neat, pleasant, arrived on time and did what they said they would do. \n\nHamid was very good at communicating what was going to be done each day and was always very good about getting back to us with questions we had. I made some minor changes along the way and Hamid made them happen. I would recommend Hamilton Bath to anyone that needs a bathroom remodeling. We are extremely happy customers.",
       project: "Master & Guest Bathroom Remodel",
     },
     {
