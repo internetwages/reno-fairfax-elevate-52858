@@ -13,6 +13,12 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import gallery7 from "@/assets/gallery-7.jpg";
+import gallery8 from "@/assets/gallery-8.jpg";
+import gallery9 from "@/assets/gallery-9.jpg";
+import gallery10 from "@/assets/gallery-10.jpg";
+import gallery11 from "@/assets/gallery-11.jpg";
+import gallery12 from "@/assets/gallery-12.jpg";
 
 const Gallery = () => {
   const projects = [
@@ -46,6 +52,12 @@ const Gallery = () => {
     { src: gallery4, alt: "Elegant master bathroom with walk-in shower" },
     { src: gallery5, alt: "Modern bathroom with floating vanity and vessel sink" },
     { src: gallery6, alt: "Classic white bathroom with carrara marble" },
+    { src: gallery7, alt: "Spacious master bathroom with double vanity and soaking tub" },
+    { src: gallery8, alt: "Luxurious walk-in shower with grey subway tiles and rainfall showerhead" },
+    { src: gallery9, alt: "Elegant powder room with pedestal sink and decorative mirror" },
+    { src: gallery10, alt: "Contemporary bathroom with freestanding soaking tub and natural light" },
+    { src: gallery11, alt: "Spacious master bathroom with marble tiles and brushed gold fixtures" },
+    { src: gallery12, alt: "Modern guest bathroom with vessel sink and geometric mirror" },
   ];
 
   return (
