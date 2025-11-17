@@ -162,11 +162,11 @@ const Testimonials = () => {
                   </div>
 
                   {/* Mobile: show full text */}
-                  <p className="md:hidden text-foreground mb-4 leading-relaxed">"{testimonial.text}"</p>
+                  <p className="md:hidden text-foreground mb-4 leading-relaxed whitespace-pre-line">"{testimonial.text}"</p>
 
                   {/* Tablet & Desktop: show truncated text with show more */}
                   <div className="hidden md:block">
-                    <p className="text-foreground mb-4 leading-relaxed">
+                    <p className="text-foreground mb-4 leading-relaxed whitespace-pre-line">
                       "
                       {expandedTestimonials.has(index) || testimonial.text.length <= 250
                         ? testimonial.text
