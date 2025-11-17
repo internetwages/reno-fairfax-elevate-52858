@@ -38,7 +38,7 @@ const Testimonials = () => {
       name: "Deena P.",
       location: "Falls Church, VA",
       rating: 5,
-      text: "I recently had two bathrooms completely redone by Hamilton Bath and the results have exceeded my expectations! I now have two Pinterest-worthy bathrooms that are beautiful and functional.\n\nAlthough the work took longer than expected because both bathrooms had hidden damage under the floors, Hamid kept me updated regularly and ultimately improved the structure as well as resolving an issue that would have led to significant damage. Miguel's craftsmanship was the most meticulous and expert I have seen.\n\nI have had several projects completed and none of them were finished as perfectly as this one. I will definitely use Hamilton Bath again when I'm ready to redo the other bathrooms.",
+      text: "I recently had two bathrooms completely redone by Hamilton Bath and the results have exceeded my expectations! I now have two Pinterest-worthy bathrooms that are beautiful and functional. Although the work took longer than expected because both bathrooms had hidden damage under the floors, Hamid kept me updated regularly and ultimately improved the structure as well as resolving an issue that would have led to significant damage. Miguel's craftsmanship was the most meticulous and expert I have seen. I have had several projects completed and none of them were finished as perfectly as this one. I will definitely use Hamilton Bath again when I'm ready to redo the other bathrooms.",
       project: "Master & Guest Bathroom Remodel"
     },
     {
@@ -160,18 +160,18 @@ const Testimonials = () => {
                   </div>
                   
                   {/* Mobile: show full text */}
-                  <p className="md:hidden text-foreground mb-4 leading-relaxed whitespace-pre-line">
+                  <p className="md:hidden text-foreground mb-4 leading-relaxed">
                     "{testimonial.text}"
                   </p>
                   
                   {/* Tablet & Desktop: show truncated text with show more */}
                   <div className="hidden md:block">
-                    <p className="text-foreground mb-4 leading-relaxed whitespace-pre-line">
-                      "{expandedTestimonials.has(index) || testimonial.text.length <= 250
+                    <p className="text-foreground mb-4 leading-relaxed">
+                      "{expandedTestimonials.has(index) || testimonial.text.length <= 175
                         ? testimonial.text
-                        : testimonial.text.substring(0, 250) + "..."}"
+                        : testimonial.text.substring(0, 175) + "..."}"
                     </p>
-                    {testimonial.text.length > 250 && (
+                    {testimonial.text.length > 175 && (
                       <Button
                         variant="ghost"
                         size="sm"
