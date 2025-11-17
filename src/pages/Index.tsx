@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle, Award, Users, Shield, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle, Award, Users, Shield, Phone, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import EstimateForm from "@/components/EstimateForm";
@@ -17,6 +18,37 @@ const Index = () => {
     { icon: Users, text: "Locally Owned" },
     { icon: Award, text: "20+ Years Experience" },
     { icon: CheckCircle, text: "Satisfaction Guaranteed" },
+  ];
+
+  const featuredTestimonials = [
+    {
+      name: "Sonja R.",
+      location: "Arlington, VA",
+      rating: 5,
+      text: "Hamid and his team at Hamilton Bath remodeled two bathrooms for us. Miguel is a true perfectionist - he made sure all the lines on the decorative tile matched perfectly. The level of craftsmanship was significantly higher than other contractors we have worked with. It's such a pleasure to work with a craftsman who cares so much about the quality of the work!",
+      project: "Master & Guest Bathroom Remodel",
+    },
+    {
+      name: "Joseph C.",
+      location: "Ashburn, VA",
+      rating: 5,
+      text: "Remodeling a bathroom is a huge undertaking for both the contractor and the homeowner. After interviewing several companies, we chose Hamilton Bath to redo our master bathroom and secondary bathroom. We worked directly with Hamid and he was very professional, knowledgeable, and pleasant. He spent a lot time with us to go over our projects, and took the time to answer all our questions, and we asked lots of questions.\n\nThe cost, quick timeline, and knowledge of the projects were what sold us on his company. From start to finish both projects took less than a month. It is important to note that Hamilton Bath is not a one stop shop. For us it was a a good fit as it lowered the cost of the projects significantly. We were on a fast and short timeline so we only ordered item in stock and quick delivery eligible. We signed a contract and ordered materials on a Wednesday and the work started the following Monday.\n\nMiguel and Fredrico were the men completing our project were fantastic. Each day they covered the entryway, stairs, and surrounding areas with sheets and plastic to contain and prevent dirt. We did clear out a large space in our garage for materials and work space. Each day Miguel would check in with us, and Hamid would reach out to discuss any issues that may have arised. Daily communication and upfront communication about everything is key to a successful project. Hamid was more than willing to discuss issues and concerns and always made time for us. We were very pleased with Hamilton Bath and would highly recommend them.",
+      project: "Master & Guest Bathroom Remodel",
+    },
+    {
+      name: "Deena P.",
+      location: "Falls Church, VA",
+      rating: 5,
+      text: "I recently had two bathrooms completely redone by Hamilton Bath and the results have exceeded my expectations! I now have two Pinterest-worthy bathrooms that are beautiful and functional. Miguel's craftsmanship was the most meticulous and expert I have seen. I have had several projects completed and none of them were finished as perfectly as this one.",
+      project: "Master & Guest Bathroom Remodel",
+    },
+    {
+      name: "Claire & Doug B.",
+      location: "Vienna, VA",
+      rating: 5,
+      text: "We recently had our hall bathroom renovated by Hamilton Bath. We could not be happier with our decision to choose this company. Hamid is very kind and knowledgeable, and patiently explained the process to us. Miguel and his team did the renovation work. Miguel is highly skilled and pays great attention to detail. From start to finish it was a pleasant experience, and we now have a beautiful bathroom thanks to Hamilton Bath.",
+      project: "Guest Bathroom Remodel",
+    },
   ];
 
   return (
@@ -138,6 +170,67 @@ const Index = () => {
             <Link to="/gallery">
               <Button variant="outline" size="lg">
                 View All Projects
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Carousel Section */}
+      <section className="py-16 md:py-24 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Read about the experiences of homeowners who trusted us with their bathroom renovations
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {featuredTestimonials.map((testimonial, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="h-full shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow">
+                      <CardContent className="p-6 flex flex-col h-full">
+                        <div className="flex items-start justify-between mb-4">
+                          <div>
+                            <h3 className="font-semibold text-lg text-foreground">{testimonial.name}</h3>
+                            <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                          </div>
+                          <div className="flex gap-1">
+                            {[...Array(testimonial.rating)].map((_, i) => (
+                              <Star key={i} className="w-5 h-5 fill-accent text-accent" />
+                            ))}
+                          </div>
+                        </div>
+                        <p className="text-muted-foreground mb-4 flex-grow line-clamp-6 whitespace-pre-line">
+                          {testimonial.text}
+                        </p>
+                        <p className="text-sm font-medium text-primary mt-auto">{testimonial.project}</p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link to="/testimonials">
+              <Button variant="outline" size="lg">
+                Read All Testimonials
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
