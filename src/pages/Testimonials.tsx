@@ -49,10 +49,10 @@ const Testimonials = () => {
       project: "Master Bathroom Remodel",
     },
     {
-      name: "Amanda T.",
-      location: "Burke, VA",
+      name: "Tom M.",
+      location: "Vienna, VA",
       rating: 5,
-      text: "The quality of work speaks for itself. Hamilton Bath turned our cramped, outdated bathroom into a spa-like retreat. They were patient with all our questions and made great design suggestions.",
+      text: "Hamid was able to step in and successfully complete a kitchen floor project after another contractor had not delivered. I am very happy with the beautiful results, and can recommend Hamilton Bath without any hesitation.",
       project: "Contemporary Bath Transformation",
     },
     {
