@@ -115,7 +115,7 @@ const Testimonials = () => {
       name: "Asha K.",
       location: "Vienna, VA",
       rating: 5,
-      text: "Hamilton Bath recently completed a renovation/updating of our hallway bathroom.  It was a pleasure to work with Hamid! From my initial consultation through to the completion of the project Hamid was excellent and timely in his communication. \n\nEvery question (and I had a lot!) was answered patiently and thoroughly. Miguel was the installer that worked on our project and he did an exceptional job.  Every aspect of our bathroom looks fantastic. \n\nThe project was started on the agreed upon date, work continued without interruption (from their side), long hours were put in to ensure that the project caused as little disruption at our home as possible, and the job area was kept clean and organized. I would highly recommend Hamilton Bath for your next bathroom project!",
+      text: "Hamilton Bath recently completed a renovation/updating of our hallway bathroom.  It was a pleasure to work with Hamid! From my initial consultation through to the completion of the project Hamid was excellent and timely in his communication. Every question (and I had a lot!) was answered patiently and thoroughly. \n\nMiguel was the installer that worked on our project and he did an exceptional job.  Every aspect of our bathroom looks fantastic. The project was started on the agreed upon date, work continued without interruption (from their side), long hours were put in to ensure that the project caused as little disruption at our home as possible, and the job area was kept clean and organized. \n\nI would highly recommend Hamilton Bath for your next bathroom project!",
       project: "Guest Bathroom Remodel",
     },
     {
