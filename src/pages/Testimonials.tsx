@@ -21,11 +21,11 @@ const Testimonials = () => {
   };
   const testimonials = [
     {
-      name: "Kevin D.",
-      location: "Bethesda, MD",
+      name: "Sonja R.",
+      location: "Arlington, VA",
       rating: 5,
-      text: "Hamid and the team at Hamilton Bath helped me with a project to re-tile my shower. In short they are incredibly professional, high quality, time efficient, and are quick to respond with any questions or information. Would definitely recommend",
-      project: "Master Bathroom Remodel",
+      text: "Hamid and his team at Hamilton Bath remodeled two bathrooms for us - our main owner's suite bath and a small bath downstairs so we worked with two of his teams. Both were amazing. We had remodeled our main bath about 15 years ago and the shower pan had leaked so they had to repair some damage in addition to the other work. We couldn't be happier with the final result. Miguel is a true perfectionist - he made sure all the lines on the decorative tile matched perfectly etc. and made several suggestions that greatly improved the look of the tile. The level of craftsmanship was significantly higher that other contractors we have worked with. It's such a pleasure to work with a craftsman who cares so much about the quality of the work!! Also, both crews were very careful to avoid tracking dust around the house - putting drop cloths all the way from the front door to the work site and cleaning up at the end of every day. I could go on and on eben though I tend to be a bit of a perfectionist and rarely give 5 star reviews. Overall, we feel extremely fortunate to have found Hamid and his crew. And, if you're reading this, good luck with your project!",
+      project: "Master & Guest Bathroom Remodel",
     },
     {
       name: "Lee Ann W.",
@@ -77,11 +77,11 @@ const Testimonials = () => {
       project: "Guest Bathroom Remodel",
     },
     {
-      name: "Sonja R.",
-      location: "Arlington, VA",
+      name: "Kevin D.",
+      location: "Bethesda, MD",
       rating: 5,
-      text: "Hamid and his team at Hamilton Bath remodeled two bathrooms for us - our main owner's suite bath and a small bath downstairs so we worked with two of his teams. Both were amazing. We had remodeled our main bath about 15 years ago and the shower pan had leaked so they had to repair some damage in addition to the other work. We couldn't be happier with the final result. Miguel is a true perfectionist - he made sure all the lines on the decorative tile matched perfectly etc. and made several suggestions that greatly improved the look of the tile. The level of craftsmanship was significantly higher that other contractors we have worked with. It's such a pleasure to work with a craftsman who cares so much about the quality of the work!! Also, both crews were very careful to avoid tracking dust around the house - putting drop cloths all the way from the front door to the work site and cleaning up at the end of every day. I could go on and on eben though I tend to be a bit of a perfectionist and rarely give 5 star reviews. Overall, we feel extremely fortunate to have found Hamid and his crew. And, if you're reading this, good luck with your project!",
-      project: "Master & Guest Bathroom Remodel",
+      text: "Hamid and the team at Hamilton Bath helped me with a project to re-tile my shower. In short they are incredibly professional, high quality, time efficient, and are quick to respond with any questions or information. Would definitely recommend",
+      project: "Master Bathroom Remodel",
     },
     {
       name: "Thomas H.",
