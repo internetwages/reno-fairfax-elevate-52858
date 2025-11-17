@@ -1,9 +1,24 @@
 import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useState } from "react";
 
 const Testimonials = () => {
+  const [expandedTestimonials, setExpandedTestimonials] = useState<Set<number>>(new Set());
+
+  const toggleTestimonial = (index: number) => {
+    setExpandedTestimonials(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
   const testimonials = [
     {
       name: "Kevin D.",
@@ -144,9 +159,29 @@ const Testimonials = () => {
                     ))}
                   </div>
                   
-                  <p className="text-foreground mb-4 leading-relaxed whitespace-pre-line">
+                  {/* Mobile: show full text */}
+                  <p className="md:hidden text-foreground mb-4 leading-relaxed whitespace-pre-line">
                     "{testimonial.text}"
                   </p>
+                  
+                  {/* Tablet & Desktop: show truncated text with show more */}
+                  <div className="hidden md:block">
+                    <p className="text-foreground mb-4 leading-relaxed whitespace-pre-line">
+                      "{expandedTestimonials.has(index) || testimonial.text.length <= 250
+                        ? testimonial.text
+                        : testimonial.text.substring(0, 250) + "..."}"
+                    </p>
+                    {testimonial.text.length > 250 && (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => toggleTestimonial(index)}
+                        className="text-primary hover:text-primary/90 p-0 h-auto font-medium mb-4"
+                      >
+                        {expandedTestimonials.has(index) ? "Show Less" : "Show More"}
+                      </Button>
+                    )}
+                  </div>
                   
                   <div className="border-t border-border pt-4">
                     <p className="font-semibold text-foreground">{testimonial.name}</p>
