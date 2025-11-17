@@ -42,7 +42,7 @@ const Testimonials = () => {
       project: "Master & Guest Bathroom Remodel"
     },
     {
-      name: "David & Linda P.",
+      name: "Joseph C.",
       location: "Reston, VA",
       rating: 5,
       text: "After interviewing several contractors, we chose Hamilton Bath for their experience and honest communication. Best decision we made! Our new bathroom is beautiful and functional.",
