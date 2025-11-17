@@ -167,11 +167,11 @@ const Testimonials = () => {
                   {/* Tablet & Desktop: show truncated text with show more */}
                   <div className="hidden md:block">
                     <p className="text-foreground mb-4 leading-relaxed">
-                      "{expandedTestimonials.has(index) || testimonial.text.length <= 175
+                      "{expandedTestimonials.has(index) || testimonial.text.length <= 200
                         ? testimonial.text
-                        : testimonial.text.substring(0, 175) + "..."}"
+                        : testimonial.text.substring(0, 200) + "..."}"
                     </p>
-                    {testimonial.text.length > 175 && (
+                    {testimonial.text.length > 200 && (
                       <Button
                         variant="ghost"
                         size="sm"
