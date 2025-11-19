@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { CheckCircle } from "lucide-react";
 import before1 from "@/assets/before-1.jpg";
 import after1 from "@/assets/after-1.jpg";
 import before2 from "@/assets/before-2.jpg";
@@ -30,6 +31,21 @@ import gallery20 from "@/assets/gallery-20.jpg";
 import gallery21 from "@/assets/gallery-21.jpg";
 
 const Gallery = () => {
+  const services = [
+    "Complete bathroom remodels",
+    "Steam Showers & Steam Room Conversions",
+    "Custom tile and shower installations",
+    "Tub-to-Shower Conversions",
+    "Heated Bathroom Floors",
+    "Custom Niches, Benches & Built-Ins",
+    "Frameless Shower Door Coordination",
+    "Plumbing & Valve Upgrades",
+    "Bathroom Electrical & LED Lighting",
+    "Pocket Door Installation & Wall Modifications",
+    "Closet Reconfiguration & Extensions",
+    "Bathroom Damage Repair & Insurance Restoration",
+  ];
+
   const projects = [
     {
       before: before1,
@@ -127,6 +143,26 @@ const Gallery = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Services Section */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <Card>
+              <CardContent className="p-8 md:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Our Services</h2>
+                <p className="text-muted-foreground mb-6">
+                  We offer comprehensive bathroom renovation services to meet all your needs:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {services.map((service, index) => (
+                    <div key={index} className="flex items-start space-x-2">
+                      <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground">{service}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Additional Gallery Section */}
