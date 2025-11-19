@@ -70,7 +70,7 @@ const Index = () => {
               Transform Your Bathroom
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6">
-              Experience 20 Years of Trusted Craftsmanship
+              Experience 24 Years of Trusted Craftsmanship
             </p>
             <p className="text-lg text-primary-foreground/80 mb-8">
               Hamilton Bath delivers premium bathroom renovations in Fairfax and Northern Virginia
