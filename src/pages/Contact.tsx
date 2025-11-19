@@ -164,7 +164,7 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Service Area</p>
                       <p className="text-muted-foreground">
-                        Fairfax, Vienna, McLean, Reston, Burke, and surrounding Northern Virginia areas
+                        Vienna, Fairfax, Herndon, Reston, Chantilly, Centreville, Oakton, McLean, Falls Church, Arlington, and Ashburn
                       </p>
                     </div>
                   </div>
