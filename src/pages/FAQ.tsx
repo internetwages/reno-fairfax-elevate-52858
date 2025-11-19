@@ -29,7 +29,7 @@ const FAQ = () => {
         "We service most locations within a 25-mile radius of Vienna, VA, including Fairfax, Herndon, Reston, Chantilly, Centreville, Oakton, McLean, Falls Church, Arlington, and Ashburn.",
     },
     {
-      question: "Do you install steam showers and heated floors",
+      question: "Do you install steam showers and heated floors?",
       answer:
         "Absolutely — we specialize in: Steam room conversions, Heated floor systems, Rain showers, Body jets, Custom benches & niches, Sloped steam ceilings, and Schluter waterproof systems.",
     },
