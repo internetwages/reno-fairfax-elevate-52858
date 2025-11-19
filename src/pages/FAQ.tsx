@@ -62,10 +62,6 @@ const FAQ = () => {
       question: "Do you handle permits?",
       answer: "Yes. When required, we obtain and manage all plumbing, electrical, and mechanical permits.",
     },
-    {
-      question: "Are you insured and licensed?",
-      answer: "Yes — Hamilton Bath is fully licensed and insured in Virginia (RBC license).",
-    },
   ];
 
   return (
