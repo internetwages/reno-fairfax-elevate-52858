@@ -29,13 +29,17 @@ const About = () => {
 
   const services = [
     "Complete bathroom remodels",
-    "Custom steam room installation",
+    "Steam Showers & Steam Room Conversions",
     "Custom tile and shower installations",
-    "Vanity and countertop replacement",
-    "Flooring installation",
-    "Fixture upgrades and replacements",
-    "Custom finishes and details",
-    "Lighting and ventilation improvements",
+    "Tub-to-Shower Conversions",
+    "Heated Bathroom Floors",
+    "Custom Niches, Benches & Built-Ins",
+    "Frameless Shower Door Coordination",
+    "Plumbing & Valve Upgrades",
+    "Bathroom Electrical & LED Lighting",
+    "Pocket Door Installation & Wall Modifications",
+    "Closet Reconfiguration & Extensions",
+    "Bathroom Damage Repair & Insurance Restoration",
   ];
 
   return (
