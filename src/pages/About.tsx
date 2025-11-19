@@ -73,7 +73,9 @@ const About = () => {
                     Whether you're remodeling a small hall bath or building the master retreat you’ve always wanted,
                     we’re here to bring your vision to life, beautifully and affordably.
                   </p>
-                  <p>The Hamilton Way.</p>
+                  <p>
+                    <b>The Hamilton Way.</b>
+                  </p>
                 </div>
               </CardContent>
             </Card>
