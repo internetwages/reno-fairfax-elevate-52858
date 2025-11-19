@@ -109,7 +109,11 @@ const About = () => {
                   title: "Design & Planning",
                   description: "Our team creates detailed plans for your approval.",
                 },
-                { number: "03", title: "Material Selection", description: "Choose your materials and finishes." },
+                {
+                  number: "03",
+                  title: "Material Selection",
+                  description: "We help you choose your materials and finishes.",
+                },
                 {
                   number: "04",
                   title: "Construction",
