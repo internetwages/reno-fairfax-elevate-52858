@@ -95,6 +95,29 @@ const About = () => {
             </div>
           </div>
 
+          {/* Process Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-foreground text-center mb-12">Our Process</h2>
+            <div className="max-w-4xl mx-auto space-y-4">
+              {[
+                { number: "01", title: "Consultation", description: "We meet with you to understand your vision, needs, and budget." },
+                { number: "02", title: "Design & Planning", description: "Our team creates detailed plans and 3D renderings for your approval." },
+                { number: "03", title: "Material Selection", description: "Choose from our curated selection of quality materials and finishes." },
+                { number: "04", title: "Construction", description: "Expert installation with daily updates and a clean, organized work site." },
+                { number: "05", title: "Final Walkthrough", description: "We ensure every detail meets our standards and your expectations." },
+              ].map((step, index) => (
+                <Card key={index} className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow">
+                  <CardContent className="p-6 flex items-start gap-6">
+                    <div className="text-4xl font-bold text-accent/20 flex-shrink-0">{step.number}</div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">{step.title}</h3>
+                      <p className="text-muted-foreground">{step.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
 
           {/* CTA Section */}
           <div className="mt-16 text-center bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
