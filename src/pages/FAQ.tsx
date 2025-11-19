@@ -68,7 +68,7 @@ const FAQ = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4">
+      <section className="pt-8 pb-16 px-4">
         <div className="container mx-auto max-w-3xl">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
