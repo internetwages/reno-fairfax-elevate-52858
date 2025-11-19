@@ -7,13 +7,13 @@ const About = () => {
   const values = [
     {
       icon: Award,
-      title: "Quality Craftsmanship",
-      description: "Every project reflects our commitment to excellence and attention to detail.",
+      title: "Commitment to Excellence",
+      description: "We go above industry standards to deliver long-lasting, beautiful results.",
     },
     {
       icon: Users,
-      title: "Family Values",
-      description: "As a family-owned business, we treat every client like part of our extended family.",
+      title: "Respect & Care",
+      description: "We treat your home with the same care and attention we’d want for our own.",
     },
     {
       icon: Heart,
