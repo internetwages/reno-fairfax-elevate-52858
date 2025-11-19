@@ -19,6 +19,15 @@ import gallery9 from "@/assets/gallery-9.jpg";
 import gallery10 from "@/assets/gallery-10.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
 import gallery12 from "@/assets/gallery-12.jpg";
+import gallery13 from "@/assets/gallery-13.jpg";
+import gallery14 from "@/assets/gallery-14.jpg";
+import gallery15 from "@/assets/gallery-15.jpg";
+import gallery16 from "@/assets/gallery-16.jpg";
+import gallery17 from "@/assets/gallery-17.jpg";
+import gallery18 from "@/assets/gallery-18.jpg";
+import gallery19 from "@/assets/gallery-19.jpg";
+import gallery20 from "@/assets/gallery-20.jpg";
+import gallery21 from "@/assets/gallery-21.jpg";
 
 const Gallery = () => {
   const projects = [
@@ -58,6 +67,15 @@ const Gallery = () => {
     { src: gallery10, alt: "Contemporary bathroom with freestanding soaking tub and natural light" },
     { src: gallery11, alt: "Spacious master bathroom with marble tiles and brushed gold fixtures" },
     { src: gallery12, alt: "Modern guest bathroom with vessel sink and geometric mirror" },
+    { src: gallery13, alt: "Modern bathroom renovation with white marble countertops and chrome fixtures" },
+    { src: gallery14, alt: "Luxurious spa bathroom with walk-in shower and black hexagon tiles" },
+    { src: gallery15, alt: "Elegant bathroom featuring clawfoot bathtub and vintage-style fixtures" },
+    { src: gallery16, alt: "Contemporary bathroom with wood-look porcelain tiles and matte black fixtures" },
+    { src: gallery17, alt: "Bright bathroom with white shiplap walls and farmhouse-style vanity" },
+    { src: gallery18, alt: "Modern master bathroom with large walk-in shower and blue mosaic accent tiles" },
+    { src: gallery19, alt: "Sophisticated bathroom with grey quartz countertops and pendant lighting" },
+    { src: gallery20, alt: "Luxury bathroom with freestanding tub next to floor-to-ceiling windows" },
+    { src: gallery21, alt: "Sleek bathroom with concrete-look tiles and floating shelves" },
   ];
 
   return (
