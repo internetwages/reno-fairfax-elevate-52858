@@ -31,7 +31,7 @@ const FAQ = () => {
     {
       question: "Do you install steam showers and heated floors",
       answer:
-        "In most cases, your bathroom will be out of commission during the renovation. We work efficiently to minimize downtime and can discuss temporary bathroom solutions if needed.",
+        "Absolutely — we specialize in: Steam room conversions, Heated floor systems, Rain showers, Body jets, Custom benches & niches, Sloped steam ceilings, and Schluter waterproof systems.",
     },
     {
       question: "Do you coordinate glass shower doors?",
