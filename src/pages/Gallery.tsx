@@ -72,7 +72,9 @@ const Gallery = () => {
   ];
 
   const galleryImages = [
+    { src: realBath3, alt: "Luxury bathroom with freestanding tub and corner glass shower" },
     { src: realBath21, alt: "Spacious master bathroom with double vanity, freestanding tub, and large window" },
+    { src: realBath20, alt: "Stunning bathroom with freestanding tub, dark tile shower, and marble floor" },
     { src: realBath22, alt: "Modern bathroom with white subway tile shower and checkered floor pattern" },
     { src: realBath1, alt: "Modern bathroom with marble tile walk-in shower and built-in niche" },
     { src: realBath2, alt: "Contemporary shower with marble tiles, bench seating, and glass enclosure" },
@@ -101,7 +103,6 @@ const Gallery = () => {
     { src: realBath17, alt: "Contemporary marble shower with sliding glass door and mosaic floor" },
     { src: realBath18, alt: "Open concept shower with marble walls and hexagonal mosaic floor" },
     { src: realBath19, alt: "Herringbone tile shower detail with built-in niches and bronze fixtures" },
-    { src: realBath20, alt: "Stunning bathroom with freestanding tub, dark tile shower, and marble floor" },
   ];
 
   return (
