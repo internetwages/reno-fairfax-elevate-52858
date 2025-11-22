@@ -8,15 +8,15 @@ import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import before3 from "@/assets/before-3.jpg";
 import after3 from "@/assets/after-3.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
-import gallery9 from "@/assets/gallery-9.jpg";
+import realBath1 from "@/assets/real-bath-1.jpg";
+import realBath2 from "@/assets/real-bath-2.jpg";
+import realBath3 from "@/assets/real-bath-3.jpg";
+import realBath4 from "@/assets/real-bath-4.jpg";
+import realBath5 from "@/assets/real-bath-5.jpg";
+import realBath6 from "@/assets/real-bath-6.jpg";
+import realBath7 from "@/assets/real-bath-7.jpg";
+import realBath8 from "@/assets/real-bath-8.jpg";
+import realBath9 from "@/assets/real-bath-9.jpg";
 import gallery10 from "@/assets/gallery-10.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
 import gallery12 from "@/assets/gallery-12.jpg";
@@ -79,15 +79,15 @@ const Gallery = () => {
   ];
 
   const galleryImages = [
-    { src: gallery1, alt: "Modern bathroom with white subway tiles and glass shower" },
-    { src: gallery2, alt: "Luxury spa bathroom with marble and gold fixtures" },
-    { src: gallery3, alt: "Contemporary bathroom with navy blue accent tiles" },
-    { src: gallery4, alt: "Elegant master bathroom with walk-in shower" },
-    { src: gallery5, alt: "Modern bathroom with floating vanity and vessel sink" },
-    { src: gallery6, alt: "Classic white bathroom with carrara marble" },
-    { src: gallery7, alt: "Spacious master bathroom with double vanity and soaking tub" },
-    { src: gallery8, alt: "Luxurious walk-in shower with grey subway tiles and rainfall showerhead" },
-    { src: gallery9, alt: "Elegant powder room with pedestal sink and decorative mirror" },
+    { src: realBath1, alt: "Modern bathroom with marble tile walk-in shower and built-in niche" },
+    { src: realBath2, alt: "Contemporary shower with marble tiles, bench seating, and glass enclosure" },
+    { src: realBath3, alt: "Luxury bathroom with freestanding tub and corner glass shower" },
+    { src: realBath4, alt: "Modern bathroom with white subway tiles, built-in niches, and glass shower door" },
+    { src: realBath5, alt: "Elegant master bathroom with marble tub surround and white cabinetry" },
+    { src: realBath6, alt: "White tiled shower with striking black accent stripe and corner bench" },
+    { src: realBath7, alt: "Classic freestanding tub with decorative mosaic floor tiles" },
+    { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
+    { src: realBath9, alt: "Elegant shower niche detail with mosaic tile accent" },
     { src: gallery10, alt: "Contemporary bathroom with freestanding soaking tub and natural light" },
     { src: gallery11, alt: "Spacious master bathroom with marble tiles and brushed gold fixtures" },
     { src: gallery12, alt: "Modern guest bathroom with vessel sink and geometric mirror" },
