@@ -189,11 +189,11 @@ const Gallery = () => {
                   className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow group"
                 >
                   <CardContent className="p-0">
-                    <div className="relative overflow-hidden bg-muted/30 flex items-center justify-center min-h-[300px]">
+                    <div className="relative overflow-hidden">
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="w-full h-auto max-h-[500px] object-contain transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
                   </CardContent>
