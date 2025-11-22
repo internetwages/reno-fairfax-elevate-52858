@@ -37,7 +37,6 @@ import gallery26 from "@/assets/gallery-26.jpg";
 import gallery28 from "@/assets/gallery-28.jpg";
 import gallery29 from "@/assets/gallery-29.jpg";
 import gallery30 from "@/assets/gallery-30.jpg";
-import gallery31 from "@/assets/gallery-31.jpg";
 
 const Gallery = () => {
   const services = [
@@ -109,7 +108,6 @@ const Gallery = () => {
     { src: gallery28, alt: "Modern shower with bench seating and neutral tile palette" },
     { src: gallery29, alt: "Contemporary bathroom with decorative accent wall and dual showerheads" },
     { src: gallery30, alt: "Luxury master bathroom with marble tub surround and large windows" },
-    { src: gallery31, alt: "Walk-in shower with sliding glass doors and mosaic accent tiles" },
   ];
 
   return (
