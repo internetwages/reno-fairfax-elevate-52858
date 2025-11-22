@@ -90,7 +90,6 @@ const Gallery = () => {
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath15, alt: "Large walk-in shower with marble tiles and bench seating" },
     { src: realBath16, alt: "Luxury marble shower with built-in bench and decorative niches" },
-    { src: realBath17, alt: "Contemporary marble shower with sliding glass door and mosaic floor" },
     { src: realBath18, alt: "Open concept shower with marble walls and hexagonal mosaic floor" },
     { src: realBath10, alt: "Master bathroom with freestanding tub and dramatic marble floor" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
