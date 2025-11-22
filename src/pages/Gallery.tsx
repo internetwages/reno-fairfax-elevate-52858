@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { CheckCircle } from "lucide-react";
+import { useState } from "react";
 import before1 from "@/assets/before-1.jpg";
 import after1 from "@/assets/after-1.jpg";
 import before2 from "@/assets/before-2.jpg";
@@ -32,6 +34,8 @@ import realBath21 from "@/assets/real-bath-21.jpg";
 import realBath22 from "@/assets/real-bath-22.jpg";
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
   const services = [
     "Complete bathroom remodels",
     "Steam Showers & Steam Room Conversions",
@@ -185,7 +189,10 @@ const Gallery = () => {
                   className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow group"
                 >
                   <CardContent className="p-0">
-                    <div className="relative overflow-hidden">
+                    <div 
+                      className="relative overflow-hidden cursor-pointer"
+                      onClick={() => setSelectedImage(image)}
+                    >
                       <img
                         src={image.src}
                         alt={image.alt}
@@ -199,6 +206,18 @@ const Gallery = () => {
           </div>
         </div>
       </main>
+
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-7xl w-full p-0 border-0">
+          {selectedImage && (
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="w-full h-auto max-h-[90vh] object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>
