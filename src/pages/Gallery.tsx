@@ -83,7 +83,6 @@ const Gallery = () => {
     { src: realBath9, alt: "Elegant shower niche detail with mosaic tile accent" },
     { src: realBath10, alt: "Master bathroom with freestanding tub and dramatic marble floor" },
     { src: realBath11, alt: "Clean bathroom with white subway tile tub surround and black fixtures" },
-    { src: realBath12, alt: "Spacious walk-in shower with neutral tiles and barn door" },
     { src: realBath13, alt: "Modern walk-in shower with mixed tile patterns and black fixtures" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath15, alt: "Large walk-in shower with marble tiles and bench seating" },
