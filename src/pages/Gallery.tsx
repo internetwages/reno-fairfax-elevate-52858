@@ -32,6 +32,10 @@ import realBath19 from "@/assets/real-bath-19.jpg";
 import realBath20 from "@/assets/real-bath-20.jpg";
 import realBath21 from "@/assets/real-bath-21.jpg";
 import realBath22 from "@/assets/real-bath-22.jpg";
+import realBath23 from "@/assets/real-bath-23.jpg";
+import realBath24 from "@/assets/real-bath-24.jpg";
+import realBath25 from "@/assets/real-bath-25.jpg";
+import realBath26 from "@/assets/real-bath-26.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
@@ -95,6 +99,10 @@ const Gallery = () => {
     { src: realBath19, alt: "Herringbone tile shower detail with built-in niches and bronze fixtures" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
+    { src: realBath23, alt: "Modern bathroom with marble tile shower, black framed mirror and vessel sink" },
+    { src: realBath24, alt: "Contemporary bathroom with blue custom cabinetry and white tiled shower" },
+    { src: realBath25, alt: "Spacious master bathroom with double vanity, french doors and subway tile shower" },
+    { src: realBath26, alt: "Elegant bathroom with freestanding tub, white subway tile shower and built-in niche" },
   ];
 
   return (
