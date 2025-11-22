@@ -87,7 +87,6 @@ const Gallery = () => {
     { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
     { src: realBath9, alt: "Elegant shower niche detail with mosaic tile accent" },
     { src: realBath10, alt: "Master bathroom with freestanding tub and dramatic marble floor" },
-    { src: realBath11, alt: "Clean bathroom with white subway tile tub surround and black fixtures" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath15, alt: "Large walk-in shower with marble tiles and bench seating" },
     { src: realBath16, alt: "Luxury marble shower with built-in bench and decorative niches" },
