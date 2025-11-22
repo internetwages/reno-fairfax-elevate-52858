@@ -100,9 +100,9 @@ const Gallery = () => {
     { src: realBath17, alt: "Contemporary marble shower with sliding glass door and mosaic floor" },
     { src: realBath18, alt: "Open concept shower with marble walls and hexagonal mosaic floor" },
     { src: realBath19, alt: "Herringbone tile shower detail with built-in niches and bronze fixtures" },
+    { src: realBath24, alt: "Contemporary bathroom with blue custom cabinetry and white tiled shower" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
-    { src: realBath24, alt: "Contemporary bathroom with blue custom cabinetry and white tiled shower" },
   ];
 
   return (
