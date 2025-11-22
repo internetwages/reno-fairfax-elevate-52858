@@ -29,6 +29,16 @@ import gallery18 from "@/assets/gallery-18.jpg";
 import gallery19 from "@/assets/gallery-19.jpg";
 import gallery20 from "@/assets/gallery-20.jpg";
 import gallery21 from "@/assets/gallery-21.jpg";
+import gallery22 from "@/assets/gallery-22.jpg";
+import gallery23 from "@/assets/gallery-23.jpg";
+import gallery24 from "@/assets/gallery-24.jpg";
+import gallery25 from "@/assets/gallery-25.jpg";
+import gallery26 from "@/assets/gallery-26.jpg";
+import gallery27 from "@/assets/gallery-27.jpg";
+import gallery28 from "@/assets/gallery-28.jpg";
+import gallery29 from "@/assets/gallery-29.jpg";
+import gallery30 from "@/assets/gallery-30.jpg";
+import gallery31 from "@/assets/gallery-31.jpg";
 
 const Gallery = () => {
   const services = [
@@ -92,6 +102,16 @@ const Gallery = () => {
     { src: gallery19, alt: "Sophisticated bathroom with grey quartz countertops and pendant lighting" },
     { src: gallery20, alt: "Luxury bathroom with freestanding tub next to floor-to-ceiling windows" },
     { src: gallery21, alt: "Sleek bathroom with concrete-look tiles and floating shelves" },
+    { src: gallery22, alt: "Modern walk-in shower with textured white tiles and rainfall showerhead" },
+    { src: gallery23, alt: "Contemporary walk-in shower with white wave tiles and built-in bench" },
+    { src: gallery24, alt: "Elegant bathroom with marble tiles, built-in shelving, and decorative floor patterns" },
+    { src: gallery25, alt: "Classic white subway tile bathroom with herringbone floor" },
+    { src: gallery26, alt: "Spacious bathroom with large marble tiles and multiple windows" },
+    { src: gallery27, alt: "Luxury bathroom featuring gold-framed mirrors and marble vanity" },
+    { src: gallery28, alt: "Modern shower with bench seating and neutral tile palette" },
+    { src: gallery29, alt: "Contemporary bathroom with decorative accent wall and dual showerheads" },
+    { src: gallery30, alt: "Luxury master bathroom with marble tub surround and large windows" },
+    { src: gallery31, alt: "Walk-in shower with sliding glass doors and mosaic accent tiles" },
   ];
 
   return (
