@@ -95,7 +95,6 @@ const Gallery = () => {
     { src: realBath19, alt: "Herringbone tile shower detail with built-in niches and bronze fixtures" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
-    { src: realBath9, alt: "Elegant shower niche detail with mosaic tile accent" },
   ];
 
   return (
