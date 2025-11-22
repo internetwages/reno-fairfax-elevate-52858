@@ -17,6 +17,16 @@ import realBath6 from "@/assets/real-bath-6.jpg";
 import realBath7 from "@/assets/real-bath-7.jpg";
 import realBath8 from "@/assets/real-bath-8.jpg";
 import realBath9 from "@/assets/real-bath-9.jpg";
+import realBath10 from "@/assets/real-bath-10.jpg";
+import realBath11 from "@/assets/real-bath-11.jpg";
+import realBath12 from "@/assets/real-bath-12.jpg";
+import realBath13 from "@/assets/real-bath-13.jpg";
+import realBath14 from "@/assets/real-bath-14.jpg";
+import realBath15 from "@/assets/real-bath-15.jpg";
+import realBath16 from "@/assets/real-bath-16.jpg";
+import realBath17 from "@/assets/real-bath-17.jpg";
+import realBath18 from "@/assets/real-bath-18.jpg";
+import realBath19 from "@/assets/real-bath-19.jpg";
 import gallery10 from "@/assets/gallery-10.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
 import gallery12 from "@/assets/gallery-12.jpg";
@@ -88,6 +98,16 @@ const Gallery = () => {
     { src: realBath7, alt: "Classic freestanding tub with decorative mosaic floor tiles" },
     { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
     { src: realBath9, alt: "Elegant shower niche detail with mosaic tile accent" },
+    { src: realBath10, alt: "Master bathroom with freestanding tub and dramatic marble floor" },
+    { src: realBath11, alt: "Clean bathroom with white subway tile tub surround and black fixtures" },
+    { src: realBath12, alt: "Spacious walk-in shower with neutral tiles and barn door" },
+    { src: realBath13, alt: "Modern walk-in shower with mixed tile patterns and black fixtures" },
+    { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
+    { src: realBath15, alt: "Large walk-in shower with marble tiles and bench seating" },
+    { src: realBath16, alt: "Luxury marble shower with built-in bench and decorative niches" },
+    { src: realBath17, alt: "Contemporary marble shower with sliding glass door and mosaic floor" },
+    { src: realBath18, alt: "Open concept shower with marble walls and hexagonal mosaic floor" },
+    { src: realBath19, alt: "Herringbone tile shower detail with built-in niches and bronze fixtures" },
     { src: gallery10, alt: "Contemporary bathroom with freestanding soaking tub and natural light" },
     { src: gallery11, alt: "Spacious master bathroom with marble tiles and brushed gold fixtures" },
     { src: gallery12, alt: "Modern guest bathroom with vessel sink and geometric mirror" },
