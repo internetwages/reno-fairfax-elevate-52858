@@ -80,9 +80,12 @@ const Gallery = () => {
   ];
 
   const galleryImages = [
-    { src: realBath3, alt: "Luxury bathroom with freestanding tub and corner glass shower" },
+    { src: realBath23, alt: "Modern bathroom with marble tile shower, black framed mirror and vessel sink" },
     { src: realBath21, alt: "Spacious master bathroom with double vanity, freestanding tub, and large window" },
     { src: realBath20, alt: "Stunning bathroom with freestanding tub, dark tile shower, and marble floor" },
+    { src: realBath3, alt: "Luxury bathroom with freestanding tub and corner glass shower" },
+    { src: realBath25, alt: "Spacious master bathroom with double vanity, french doors and subway tile shower" },
+    { src: realBath26, alt: "Elegant bathroom with freestanding tub, white subway tile shower and built-in niche" },
     { src: realBath22, alt: "Modern bathroom with white subway tile shower and checkered floor pattern" },
     { src: realBath13, alt: "Modern walk-in shower with mixed tile patterns and black fixtures" },
     { src: realBath11, alt: "Clean bathroom with white subway tile tub surround and black fixtures" },
@@ -99,10 +102,7 @@ const Gallery = () => {
     { src: realBath19, alt: "Herringbone tile shower detail with built-in niches and bronze fixtures" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath8, alt: "Luxury travertine shower with mosaic accent band and built-in bench" },
-    { src: realBath23, alt: "Modern bathroom with marble tile shower, black framed mirror and vessel sink" },
     { src: realBath24, alt: "Contemporary bathroom with blue custom cabinetry and white tiled shower" },
-    { src: realBath25, alt: "Spacious master bathroom with double vanity, french doors and subway tile shower" },
-    { src: realBath26, alt: "Elegant bathroom with freestanding tub, white subway tile shower and built-in niche" },
   ];
 
   return (
