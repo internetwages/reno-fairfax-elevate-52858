@@ -34,7 +34,6 @@ import gallery23 from "@/assets/gallery-23.jpg";
 import gallery24 from "@/assets/gallery-24.jpg";
 import gallery25 from "@/assets/gallery-25.jpg";
 import gallery26 from "@/assets/gallery-26.jpg";
-import gallery27 from "@/assets/gallery-27.jpg";
 import gallery28 from "@/assets/gallery-28.jpg";
 import gallery29 from "@/assets/gallery-29.jpg";
 import gallery30 from "@/assets/gallery-30.jpg";
@@ -107,7 +106,6 @@ const Gallery = () => {
     { src: gallery24, alt: "Elegant bathroom with marble tiles, built-in shelving, and decorative floor patterns" },
     { src: gallery25, alt: "Classic white subway tile bathroom with herringbone floor" },
     { src: gallery26, alt: "Spacious bathroom with large marble tiles and multiple windows" },
-    { src: gallery27, alt: "Luxury bathroom featuring gold-framed mirrors and marble vanity" },
     { src: gallery28, alt: "Modern shower with bench seating and neutral tile palette" },
     { src: gallery29, alt: "Contemporary bathroom with decorative accent wall and dual showerheads" },
     { src: gallery30, alt: "Luxury master bathroom with marble tub surround and large windows" },
@@ -200,11 +198,11 @@ const Gallery = () => {
               {galleryImages.map((image, index) => (
                 <Card key={index} className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow group">
                   <CardContent className="p-0">
-                    <div className="relative overflow-hidden">
+                    <div className="relative overflow-hidden bg-muted/30 flex items-center justify-center min-h-[300px]">
                       <img 
                         src={image.src} 
                         alt={image.alt}
-                        className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-auto max-h-[500px] object-contain transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
                   </CardContent>
