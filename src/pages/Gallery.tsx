@@ -53,21 +53,21 @@ const Gallery = () => {
       after: after1,
       title: "Full Bathroom Remodel",
       location: "Fairfax Station, VA",
-      description: "Complete transformation with modern white subway tiles, new vanity, and updated fixtures."
+      description: "Complete transformation with modern white subway tiles, new vanity, and updated fixtures.",
     },
     {
       before: before2,
       after: after2,
       title: "Master Bath Transformation",
       location: "Vienna, VA",
-      description: "Luxury spa-like retreat with marble tiles, soaking tub, and brushed gold fixtures."
+      description: "Luxury spa-like retreat with marble tiles, soaking tub, and brushed gold fixtures.",
     },
     {
       before: before3,
       after: after3,
       title: "Contemporary Bath Renovation",
       location: "McLean, VA",
-      description: "Spacious design with navy accent wall, double vanity, and premium finishes."
+      description: "Spacious design with navy accent wall, double vanity, and premium finishes.",
     },
   ];
 
@@ -94,7 +94,6 @@ const Gallery = () => {
     { src: realBath10, alt: "Master bathroom with freestanding tub and dramatic marble floor" },
     { src: realBath11, alt: "Clean bathroom with white subway tile tub surround and black fixtures" },
     { src: realBath12, alt: "Spacious walk-in shower with neutral tiles and barn door" },
-    { src: realBath13, alt: "Modern walk-in shower with mixed tile patterns and black fixtures" },
     { src: realBath14, alt: "Elegant bathroom with marble shower and navy blue vanity" },
     { src: realBath15, alt: "Large walk-in shower with marble tiles and bench seating" },
     { src: realBath16, alt: "Luxury marble shower with built-in bench and decorative niches" },
@@ -113,23 +112,25 @@ const Gallery = () => {
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our Work
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Work</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Browse our portfolio of completed bathroom renovations across Northern Virginia. Each project showcases our dedication to quality craftsmanship and customer satisfaction.
+              Browse our portfolio of completed bathroom renovations across Northern Virginia. Each project showcases
+              our dedication to quality craftsmanship and customer satisfaction.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-12">
             {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow">
+              <Card
+                key={index}
+                className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow"
+              >
                 <CardContent className="p-0">
                   <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="relative">
-                      <img 
-                        src={project.before} 
-                        alt={`Before - ${project.title}`} 
+                      <img
+                        src={project.before}
+                        alt={`Before - ${project.title}`}
                         className="w-full h-80 md:h-96 object-cover"
                       />
                       <div className="absolute top-4 left-4 bg-muted px-4 py-2 rounded-md text-base font-semibold shadow-md">
@@ -137,9 +138,9 @@ const Gallery = () => {
                       </div>
                     </div>
                     <div className="relative">
-                      <img 
-                        src={project.after} 
-                        alt={`After - ${project.title}`} 
+                      <img
+                        src={project.after}
+                        alt={`After - ${project.title}`}
                         className="w-full h-80 md:h-96 object-cover"
                       />
                       <div className="absolute top-4 right-4 bg-accent px-4 py-2 rounded-md text-base font-semibold text-accent-foreground shadow-md">
@@ -180,21 +181,22 @@ const Gallery = () => {
           {/* Additional Gallery Section */}
           <div className="mt-16">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                More Completed Projects
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">More Completed Projects</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Explore additional bathroom renovations showcasing our expertise in design and craftsmanship
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {galleryImages.map((image, index) => (
-                <Card key={index} className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow group">
+                <Card
+                  key={index}
+                  className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow group"
+                >
                   <CardContent className="p-0">
                     <div className="relative overflow-hidden bg-muted/30 flex items-center justify-center min-h-[300px]">
-                      <img 
-                        src={image.src} 
+                      <img
+                        src={image.src}
                         alt={image.alt}
                         className="w-full h-auto max-h-[500px] object-contain transition-transform duration-300 group-hover:scale-105"
                       />
