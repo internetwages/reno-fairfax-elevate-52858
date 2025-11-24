@@ -68,7 +68,7 @@ const Gallery = () => {
     },
     {
       before: before2,
-      after: after2,
+      after: realBath20,
       title: "Master Bath Transformation",
       location: "Vienna, VA",
       description: "Luxury spa-like retreat with marble tiles, soaking tub, and brushed gold fixtures.",
