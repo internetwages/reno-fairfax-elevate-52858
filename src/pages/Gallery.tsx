@@ -36,6 +36,9 @@ import realBath23 from "@/assets/real-bath-23.jpg";
 import realBath24 from "@/assets/real-bath-24.jpg";
 import realBath25 from "@/assets/real-bath-25.jpg";
 import realBath26 from "@/assets/real-bath-26.jpg";
+import realBath27 from "@/assets/real-bath-27.jpg";
+import realBath28 from "@/assets/real-bath-28.jpg";
+import realBath29 from "@/assets/real-bath-29.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
@@ -83,6 +86,9 @@ const Gallery = () => {
     { src: realBath10, alt: "Master bathroom with freestanding tub and dramatic marble floor" },
     { src: realBath21, alt: "Spacious master bathroom with double vanity, freestanding tub, and large window" },
     { src: realBath20, alt: "Stunning bathroom with freestanding tub, dark tile shower, and marble floor" },
+    { src: realBath27, alt: "Gray marble master bathroom with corner tub, walk-in shower and dark vanity" },
+    { src: realBath28, alt: "Marble bathroom featuring open shower with bronze fixtures and corner soaking tub" },
+    { src: realBath29, alt: "Elegant gray marble bathroom with dual shower heads, built-in niches and corner tub" },
     { src: realBath3, alt: "Luxury bathroom with freestanding tub and corner glass shower" },
     { src: realBath26, alt: "Elegant bathroom with freestanding tub, white subway tile shower and built-in niche" },
     { src: realBath25, alt: "Spacious master bathroom with double vanity, french doors and subway tile shower" },
