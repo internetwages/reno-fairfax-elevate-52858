@@ -56,7 +56,7 @@ const handler = async (req: Request): Promise<Response> => {
       name: name.trim(),
       email: email.trim().toLowerCase(),
       phone: phone?.trim() || null,
-      projectType: projectType?.trim() || null,
+      project_type: projectType?.trim() || null,
       details: details?.trim() || null,
     };
 
