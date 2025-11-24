@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Loader2 } from "lucide-react";
+import { Loader2, CheckCircle2, FileSearch, Phone, Calendar, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -153,33 +153,67 @@ const EstimateForm = () => {
       </Card>
 
       <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Thank You for Your Submission!</DialogTitle>
-            <DialogDescription>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader className="space-y-4">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center animate-scale-in">
+              <CheckCircle2 className="w-6 h-6 text-primary" />
+            </div>
+            <DialogTitle className="text-center text-2xl">Thank You!</DialogTitle>
+            <DialogDescription className="text-center">
               Your project inquiry has been received successfully.
             </DialogDescription>
           </DialogHeader>
-          <div className="space-y-4 py-4">
-            <h3 className="font-semibold text-lg">What happens next?</h3>
-            <ol className="space-y-3">
-              <li className="flex gap-3">
-                <span className="font-semibold text-primary">1)</span>
-                <span>We'll review your project details</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-semibold text-primary">2)</span>
-                <span>Contact you within 24 hours</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-semibold text-primary">3)</span>
-                <span>Schedule a free in-home consultation</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="font-semibold text-primary">4)</span>
-                <span>Provide a detailed estimate</span>
-              </li>
-            </ol>
+          <div className="space-y-6 py-4">
+            <h3 className="font-semibold text-lg text-center">What happens next?</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <FileSearch className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Review Project Details</p>
+                  <p className="text-sm text-muted-foreground">Our team will carefully review your requirements</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Contact Within 24 Hours</p>
+                  <p className="text-sm text-muted-foreground">We'll reach out to discuss your project</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Calendar className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Schedule Consultation</p>
+                  <p className="text-sm text-muted-foreground">Free in-home visit at your convenience</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Receive Detailed Estimate</p>
+                  <p className="text-sm text-muted-foreground">Complete pricing breakdown for your project</p>
+                </div>
+              </div>
+            </div>
+            
+            <Button 
+              onClick={() => setShowSuccessDialog(false)} 
+              className="w-full"
+              size="lg"
+            >
+              Got It!
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
