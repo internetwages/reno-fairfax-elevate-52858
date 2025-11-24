@@ -7,10 +7,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import EstimateForm from "@/components/EstimateForm";
 import heroImage from "@/assets/hero-bathroom-new.jpg";
-import before1 from "@/assets/before-1.jpg";
-import after1 from "@/assets/after-1.jpg";
+import before1 from "@/assets/before-new-1.jpg";
+import after1 from "@/assets/after-new-1.jpg";
 import before2 from "@/assets/before-2.jpg";
-import after2 from "@/assets/after-2.jpg";
+import after2 from "@/assets/real-bath-20.jpg";
 
 const Index = () => {
   const features = [
@@ -135,8 +135,8 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="p-4">
-                  <p className="text-sm font-medium text-foreground">Full Bathroom Remodel</p>
-                  <p className="text-xs text-muted-foreground">Fairfax Station, VA</p>
+                  <p className="text-sm font-medium text-foreground">Luxurious Gray Marble Master Bath</p>
+                  <p className="text-xs text-muted-foreground">Northern Virginia</p>
                 </div>
               </CardContent>
             </Card>
