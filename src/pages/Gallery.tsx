@@ -132,12 +132,12 @@ const Gallery = () => {
                 className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow"
               >
                 <CardContent className="p-0">
-                  <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border">
+                  <div className="flex flex-col divide-y divide-border">
                     <div className="relative">
                       <img
                         src={project.before}
                         alt={`Before - ${project.title}`}
-                        className="w-full h-80 md:h-96 object-cover"
+                        className="w-full h-[500px] object-cover"
                       />
                       <div className="absolute top-4 left-4 bg-muted px-4 py-2 rounded-md text-base font-semibold shadow-md">
                         Before
@@ -147,9 +147,9 @@ const Gallery = () => {
                       <img
                         src={project.after}
                         alt={`After - ${project.title}`}
-                        className="w-full h-80 md:h-96 object-cover"
+                        className="w-full h-[500px] object-cover"
                       />
-                      <div className="absolute top-4 right-4 bg-accent px-4 py-2 rounded-md text-base font-semibold text-accent-foreground shadow-md">
+                      <div className="absolute top-4 left-4 bg-accent px-4 py-2 rounded-md text-base font-semibold text-accent-foreground shadow-md">
                         After
                       </div>
                     </div>
