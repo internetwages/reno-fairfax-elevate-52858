@@ -16,24 +16,54 @@ const Contact = () => {
     email: "",
     phone: "",
     projectType: "",
-    details: ""
+    details: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send the data to a backend
-    toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      projectType: "",
-      details: ""
-    });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/ecombagbiz@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          projectType: formData.projectType,
+          details: formData.details,
+          _subject: `New Contact Request from ${formData.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          projectType: "",
+          details: "",
+        });
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      toast.error("Something went wrong. Please try again later.");
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -43,9 +73,7 @@ const Contact = () => {
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Get Your Free Estimate
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Get Your Free Estimate</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Tell us about your project and we'll get back to you within 24 hours
             </p>
@@ -98,7 +126,10 @@ const Contact = () => {
                       </div>
                       <div>
                         <Label htmlFor="projectType">Project Type *</Label>
-                        <Select value={formData.projectType} onValueChange={(value) => handleChange("projectType", value)}>
+                        <Select
+                          value={formData.projectType}
+                          onValueChange={(value) => handleChange("projectType", value)}
+                        >
                           <SelectTrigger>
                             <SelectValue placeholder="Select project type" />
                           </SelectTrigger>
@@ -124,8 +155,8 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full md:w-auto">
-                      Request Free Estimate
+                    <Button type="submit" size="lg" className="w-full md:w-auto" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Request Free Estimate"}
                     </Button>
                   </form>
                 </CardContent>
@@ -153,7 +184,10 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <a href="mailto:hamiltonbath@gmail.com" className="text-muted-foreground hover:text-accent transition-colors">
+                      <a
+                        href="mailto:hamiltonbath@gmail.com"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
                         hamiltonbath@gmail.com
                       </a>
                     </div>
@@ -164,7 +198,8 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Service Area</p>
                       <p className="text-muted-foreground">
-                        Vienna, Fairfax, Herndon, Reston, Chantilly, Centreville, Oakton, McLean, Falls Church, Arlington, and Ashburn
+                        Vienna, Fairfax, Herndon, Reston, Chantilly, Centreville, Oakton, McLean, Falls Church,
+                        Arlington, and Ashburn
                       </p>
                     </div>
                   </div>
@@ -174,8 +209,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Hours</p>
                       <p className="text-muted-foreground text-sm">
-                        Mon-Fri: 7am - 6pm<br />
-                        Sat: 8am - 4pm<br />
+                        Mon-Fri: 7am - 6pm
+                        <br />
+                        Sat: 8am - 4pm
+                        <br />
                         Sun: Closed
                       </p>
                     </div>
