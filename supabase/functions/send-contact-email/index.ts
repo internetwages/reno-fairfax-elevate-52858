@@ -92,7 +92,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send notification email to business owner
     const notificationEmailResponse = await resend.emails.send({
       from: "Hamilton Bath Renovations <onboarding@resend.dev>",
-      to: ["hamiltonbath@gmail.com"],
+      to: ["ecombagbiz@gmail.com"],
       subject: `New Estimate Request from ${sanitizedData.name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
