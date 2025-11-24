@@ -61,7 +61,7 @@ export const BeforeAfterSlider = ({
   return (
     <div
       ref={containerRef}
-      className={cn("relative w-full aspect-[3/4] overflow-hidden select-none cursor-col-resize", className)}
+      className={cn("relative w-full h-[500px] md:h-[600px] overflow-hidden select-none cursor-col-resize", className)}
       onMouseDown={handleMouseDown}
       onTouchStart={handleMouseDown}
     >
