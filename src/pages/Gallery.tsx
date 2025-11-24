@@ -4,8 +4,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { CheckCircle, Maximize2 } from "lucide-react";
 import { useState } from "react";
-import before1 from "@/assets/before-new-1.jpg";
-import after1 from "@/assets/after-new-1.jpg";
+import before1 from "@/assets/before-1.jpg";
+import after1 from "@/assets/after-1.jpg";
 import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import before3 from "@/assets/before-3.jpg";
@@ -68,7 +68,7 @@ const Gallery = () => {
     },
     {
       before: before2,
-      after: realBath20,
+      after: after2,
       title: "Master Bath Transformation",
       location: "Vienna, VA",
       description: "Luxury spa-like retreat with marble tiles, soaking tub, and brushed gold fixtures.",
