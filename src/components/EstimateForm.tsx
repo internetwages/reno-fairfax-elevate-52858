@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -6,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const EstimateForm = () => {
   const [formData, setFormData] = useState({
@@ -15,17 +17,43 @@ const EstimateForm = () => {
     projectType: "",
     details: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      projectType: "",
-      details: ""
-    });
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          projectType: formData.projectType,
+          details: formData.details,
+        },
+      });
+
+      if (error) {
+        console.error("Error submitting form:", error);
+        toast.error("Something went wrong. Please try again or call us directly.");
+        return;
+      }
+
+      toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        details: ""
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -107,8 +135,15 @@ const EstimateForm = () => {
             />
           </div>
 
-          <Button type="submit" size="lg" className="w-full">
-            Request Free Estimate
+          <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Submitting...
+              </>
+            ) : (
+              "Request Free Estimate"
+            )}
           </Button>
         </form>
       </CardContent>
