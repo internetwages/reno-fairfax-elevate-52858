@@ -120,7 +120,7 @@ const Index = () => {
             {/* Before/After 1 */}
             <Card className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow">
               <CardContent className="p-0">
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-2 divide-x divide-border">
                   <div className="relative">
                     <img src={before1} alt="Before renovation" className="w-full h-64 object-cover" />
                     <div className="absolute top-2 left-2 bg-muted px-3 py-1 rounded-md text-sm font-semibold">
@@ -144,7 +144,7 @@ const Index = () => {
             {/* Before/After 2 */}
             <Card className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow">
               <CardContent className="p-0">
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-2 divide-x divide-border">
                   <div className="relative">
                     <img src={before2} alt="Before renovation" className="w-full h-64 object-cover" />
                     <div className="absolute top-2 left-2 bg-muted px-3 py-1 rounded-md text-sm font-semibold">
