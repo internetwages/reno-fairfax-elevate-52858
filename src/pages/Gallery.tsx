@@ -132,7 +132,7 @@ const Gallery = () => {
                 className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)] transition-shadow"
               >
                 <CardContent className="p-0">
-                  <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border">
                     <div className="relative">
                       <img
                         src={project.before}
