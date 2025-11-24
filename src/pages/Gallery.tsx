@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Maximize2 } from "lucide-react";
 import { useState } from "react";
 import before1 from "@/assets/before-new-1.jpg";
 import after1 from "@/assets/after-new-1.jpg";
@@ -133,7 +133,7 @@ const Gallery = () => {
               >
                 <CardContent className="p-0">
                   <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border">
-                    <div className="relative">
+                    <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: project.before, alt: `Before - ${project.title}` })}>
                       <img
                         src={project.before}
                         alt={`Before - ${project.title}`}
@@ -142,8 +142,14 @@ const Gallery = () => {
                       <div className="absolute top-4 left-4 bg-muted px-4 py-2 rounded-md text-base font-semibold shadow-md">
                         Before
                       </div>
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2 text-white">
+                          <Maximize2 className="w-6 h-6" />
+                          <span className="text-sm font-medium">Click to enlarge</span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="relative">
+                    <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: project.after, alt: `After - ${project.title}` })}>
                       <img
                         src={project.after}
                         alt={`After - ${project.title}`}
@@ -151,6 +157,12 @@ const Gallery = () => {
                       />
                       <div className="absolute top-4 right-4 bg-accent px-4 py-2 rounded-md text-base font-semibold text-accent-foreground shadow-md">
                         After
+                      </div>
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2 text-white">
+                          <Maximize2 className="w-6 h-6" />
+                          <span className="text-sm font-medium">Click to enlarge</span>
+                        </div>
                       </div>
                     </div>
                   </div>
