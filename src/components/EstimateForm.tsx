@@ -13,54 +13,23 @@ const EstimateForm = () => {
     email: "",
     phone: "",
     projectType: "",
-    details: "",
+    details: ""
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/ecombagbiz@gmai.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          projectType: formData.projectType,
-          details: formData.details,
-          _subject: `New Estimate Request from ${formData.name}`,
-        }),
-      });
-
-      if (response.ok) {
-        toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          projectType: "",
-          details: "",
-        });
-      } else {
-        toast.error("Something went wrong. Please try again later.");
-      }
-    } catch (error) {
-      toast.error("Something went wrong. Please try again later.");
-      console.error("Form submission error:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      projectType: "",
+      details: ""
+    });
   };
 
   const handleChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -108,7 +77,10 @@ const EstimateForm = () => {
             </div>
             <div>
               <Label htmlFor="projectType">Project Type *</Label>
-              <Select value={formData.projectType} onValueChange={(value) => handleChange("projectType", value)}>
+              <Select
+                value={formData.projectType}
+                onValueChange={(value) => handleChange("projectType", value)}
+              >
                 <SelectTrigger id="projectType">
                   <SelectValue placeholder="Select project type" />
                 </SelectTrigger>
@@ -135,8 +107,8 @@ const EstimateForm = () => {
             />
           </div>
 
-          <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-            {isSubmitting ? "Sending..." : "Request Free Estimate"}
+          <Button type="submit" size="lg" className="w-full">
+            Request Free Estimate
           </Button>
         </form>
       </CardContent>
