@@ -64,21 +64,24 @@ const Gallery = () => {
       after: after1,
       title: "Luxurious Gray Marble Master Bath",
       location: "Northern Virginia",
-      description: "Complete master bathroom transformation featuring stunning gray marble throughout, custom corner tub surround, walk-in shower with pebble floor, and elegant dark vanity.",
+      description:
+        "Replaced dated white tile with large-format marble-look flooring, a tiled walk-in shower, and a coordinating tub surround and vanity for a cohesive, spa-like master bath.",
     },
     {
       before: before2,
       after: after2,
       title: "Master Bath Transformation",
       location: "Vienna, VA",
-      description: "Luxury spa-like retreat with marble tiles, soaking tub, and brushed gold fixtures.",
+      description:
+        "Complete master bathroom transformation that converted a dated tub-and-shower combo into a clean, modern space by removing the bulky tub ledge, adding a freestanding soaking tub, and creating an open walk-in shower with dark accent tile and marble-look flooring.",
     },
     {
       before: before3,
       after: after3,
-      title: "Contemporary Bath Renovation",
+      title: "Guest Bath Renovation",
       location: "McLean, VA",
-      description: "Spacious design with navy accent wall, double vanity, and premium finishes.",
+      description:
+        "Updated this dated red-tile bath with large-format gray wall tile, marble-look flooring, recessed lighting, and a sleek vanity for a clean, modern spa feel.",
     },
   ];
 
@@ -133,7 +136,10 @@ const Gallery = () => {
               >
                 <CardContent className="p-0">
                   <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border">
-                    <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: project.before, alt: `Before - ${project.title}` })}>
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() => setSelectedImage({ src: project.before, alt: `Before - ${project.title}` })}
+                    >
                       <img
                         src={project.before}
                         alt={`Before - ${project.title}`}
@@ -149,7 +155,10 @@ const Gallery = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="relative group cursor-pointer" onClick={() => setSelectedImage({ src: project.after, alt: `After - ${project.title}` })}>
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() => setSelectedImage({ src: project.after, alt: `After - ${project.title}` })}
+                    >
                       <img
                         src={project.after}
                         alt={`After - ${project.title}`}
