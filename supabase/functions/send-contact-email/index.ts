@@ -91,7 +91,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification email to business owner
     const notificationEmailResponse = await resend.emails.send({
-      from: "Hamilton Bath Renovations <onboarding@resend.dev>",
+      from: "Hamilton Bath Renovations <noreply@hamiltonbath.co>",
       to: ["hamiltonbath@gmail.com"],
       subject: `New Estimate Request from ${sanitizedData.name}`,
       html: `
@@ -128,7 +128,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to customer
     const confirmationEmailResponse = await resend.emails.send({
-      from: "Hamilton Bath Renovations <onboarding@resend.dev>",
+      from: "Hamilton Bath Renovations <noreply@hamiltonbath.co>",
       to: [sanitizedData.email],
       subject: "Thank you for contacting Hamilton Bath Renovations",
       html: `
