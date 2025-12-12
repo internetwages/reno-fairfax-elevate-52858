@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Loader2 } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Loader2, CheckCircle2, FileSearch, Calendar, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ const Contact = () => {
     details: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +44,7 @@ const Contact = () => {
         return;
       }
 
-      toast.success("Thank you! We'll contact you within 24 hours to schedule your free estimate.");
+      setShowSuccessDialog(true);
       setFormData({
         name: "",
         email: "",
@@ -58,8 +60,24 @@ const Contact = () => {
     }
   };
 
+  const formatPhoneNumber = (value: string) => {
+    const phoneNumber = value.replace(/\D/g, '');
+    const phoneNumberLength = phoneNumber.length;
+    
+    if (phoneNumberLength < 4) return phoneNumber;
+    if (phoneNumberLength < 7) {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+    }
+    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
+  };
+
   const handleChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    if (field === "phone") {
+      const formatted = formatPhoneNumber(value);
+      setFormData(prev => ({ ...prev, [field]: formatted }));
+    } else {
+      setFormData(prev => ({ ...prev, [field]: value }));
+    }
   };
 
   return (
@@ -233,6 +251,72 @@ const Contact = () => {
       </main>
 
       <Footer />
+
+      <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader className="space-y-4">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center animate-scale-in">
+              <CheckCircle2 className="w-6 h-6 text-primary" />
+            </div>
+            <DialogTitle className="text-center text-2xl">Thank You!</DialogTitle>
+            <DialogDescription className="text-center">
+              Your project inquiry has been received successfully.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-6 py-4">
+            <h3 className="font-semibold text-lg text-center">What happens next?</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <FileSearch className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Review Project Details</p>
+                  <p className="text-sm text-muted-foreground">Our team will carefully review your requirements</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Contact Within 24 Hours</p>
+                  <p className="text-sm text-muted-foreground">We'll reach out to discuss your project</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Calendar className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Schedule Consultation</p>
+                  <p className="text-sm text-muted-foreground">Free in-home visit at your convenience</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 items-start p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Receive Detailed Estimate</p>
+                  <p className="text-sm text-muted-foreground">Complete pricing breakdown for your project</p>
+                </div>
+              </div>
+            </div>
+            
+            <Button 
+              onClick={() => setShowSuccessDialog(false)} 
+              className="w-full"
+              size="lg"
+            >
+              Got It!
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
