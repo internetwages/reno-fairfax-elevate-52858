@@ -91,7 +91,7 @@ const Contact = () => {
               Get Your Free Estimate
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Tell us about your project, or call us to discuss your ideas. We'll get back to you within 24 hours.
+              Tell us about your project, or call us to discuss your ideas.
             </p>
           </div>
 
