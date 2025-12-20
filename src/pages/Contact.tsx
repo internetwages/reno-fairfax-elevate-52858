@@ -168,16 +168,19 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full md:w-auto" disabled={isSubmitting}>
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                          Submitting...
-                        </>
-                      ) : (
-                        "Request a Call Back"
-                      )}
-                    </Button>
+                    <div>
+                      <Button type="submit" size="lg" className="w-full md:w-auto" disabled={isSubmitting}>
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                            Submitting...
+                          </>
+                        ) : (
+                          "Request a Call Back"
+                        )}
+                      </Button>
+                      <p className="text-sm text-muted-foreground mt-2">Response within 24 hours.</p>
+                    </div>
                   </form>
                 </CardContent>
               </Card>
