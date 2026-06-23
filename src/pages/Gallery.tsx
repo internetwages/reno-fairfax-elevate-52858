@@ -68,7 +68,7 @@ const Gallery = () => {
       after: project1After.url,
       title: "Master Bath Transformation",
       location: "Leesburg, VA",
-      description: "Transformed a dated master bathroom into a clean, spa-inspired space with a freestanding soaking tub, dual black vanities, warm wood flooring, updated lighting, and modern tile accents.",
+      description: "Reworked the original tub-and-shower layout into a cleaner, more open design featuring a large walk-in shower with marble-look tile, built-in niches, mosaic shower flooring, brushed bronze fixtures, and a freestanding soaking tub.",
     },
 
     {
