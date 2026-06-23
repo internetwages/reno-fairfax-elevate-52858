@@ -39,6 +39,8 @@ import realBath26 from "@/assets/real-bath-26.jpg";
 import realBath27 from "@/assets/real-bath-27.jpg";
 import realBath28 from "@/assets/real-bath-28.jpg";
 import realBath29 from "@/assets/real-bath-29.jpg";
+import project1Before from "@/assets/project1-before.jpg.asset.json";
+import project1After from "@/assets/project1-after.jpg.asset.json";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
@@ -60,12 +62,13 @@ const Gallery = () => {
 
   const projects = [
     {
-      before: "/placeholder.svg",
-      after: "/placeholder.svg",
+      before: project1Before.url,
+      after: project1After.url,
       title: "Project Title",
       location: "Location",
       description: "Description...",
     },
+
     {
       before: "/placeholder.svg",
       after: "/placeholder.svg",
