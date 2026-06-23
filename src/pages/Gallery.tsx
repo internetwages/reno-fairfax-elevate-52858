@@ -66,18 +66,18 @@ const Gallery = () => {
     {
       before: project1Before.url,
       after: project1After.url,
-      title: "Project Title",
-      location: "Location",
-      description: "Description...",
+      title: "Master Bath Transformation",
+      location: "Leesburg, VA",
+      description: "Transformed a dated master bathroom into a clean, spa-inspired space with a freestanding soaking tub, dual black vanities, warm wood flooring, updated lighting, and modern tile accents.",
     },
 
     {
       before: project2Before.url,
       after: project2After.url,
 
-      title: "Project Title",
-      location: "Location",
-      description: "Description...",
+      title: "Master Bath Transformation",
+      location: "Leesburg, VA",
+      description: "Transformed a dated master bathroom into a clean, spa-inspired space with a freestanding soaking tub, dual black vanities, warm wood flooring, updated lighting, and modern tile accents.",
     },
     {
       before: before1,
