@@ -64,6 +64,22 @@ const Gallery = () => {
 
   const projects = [
     {
+      before: beforeNew1,
+      after: afterNew1,
+      title: "Modern Spa Retreat",
+      location: "Fairfax, VA",
+      description:
+        "Complete transformation from a dated builder-grade bath to a luxurious spa-inspired retreat with floor-to-ceiling tile, a frameless glass shower, and heated flooring.",
+    },
+    {
+      before: beforeNew2,
+      after: afterNew2,
+      title: "Contemporary Master Bath",
+      location: "Arlington, VA",
+      description:
+        "Full gut renovation replacing old fixtures and worn surfaces with a sleek modern design featuring a walk-in glass shower, freestanding tub, and custom double vanity.",
+    },
+    {
       before: before1,
       after: after1,
       title: "Luxurious Gray Marble Master Bath",
