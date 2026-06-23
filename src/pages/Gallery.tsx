@@ -10,10 +10,6 @@ import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import before3 from "@/assets/before-3.jpg";
 import after3 from "@/assets/after-3.jpg";
-import beforeNew1 from "@/assets/before-new-1.jpg";
-import afterNew1 from "@/assets/after-new-1.jpg";
-import beforeNew2 from "@/assets/before-new-2.jpg";
-import afterNew2 from "@/assets/after-new-2.jpg";
 import realBath1 from "@/assets/real-bath-1.jpg";
 import realBath2 from "@/assets/real-bath-2.jpg";
 import realBath3 from "@/assets/real-bath-3.jpg";
@@ -64,20 +60,18 @@ const Gallery = () => {
 
   const projects = [
     {
-      before: beforeNew1,
-      after: afterNew1,
-      title: "Modern Spa Retreat",
-      location: "Fairfax, VA",
-      description:
-        "Complete transformation from a dated builder-grade bath to a luxurious spa-inspired retreat with floor-to-ceiling tile, a frameless glass shower, and heated flooring.",
+      before: "/placeholder.svg",
+      after: "/placeholder.svg",
+      title: "Project Title",
+      location: "Location",
+      description: "Description...",
     },
     {
-      before: beforeNew2,
-      after: afterNew2,
-      title: "Contemporary Master Bath",
-      location: "Arlington, VA",
-      description:
-        "Full gut renovation replacing old fixtures and worn surfaces with a sleek modern design featuring a walk-in glass shower, freestanding tub, and custom double vanity.",
+      before: "/placeholder.svg",
+      after: "/placeholder.svg",
+      title: "Project Title",
+      location: "Location",
+      description: "Description...",
     },
     {
       before: before1,
